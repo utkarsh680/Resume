@@ -112,13 +112,13 @@
 
 // // for contact section
 
-function onClickMenu() {
+
+// for alarm clock website link
+function onClickMenu(){
     location.href ='https://clinquant-mermaid-09750f.netlify.app/';
- console.log("clicked");
 }
 
-// for calculator 
-
+// for calculator website link
 function onclickCalculator(){
     location.href ='https://fluffy-dango-534713.netlify.app/';
 }
