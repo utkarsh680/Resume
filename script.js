@@ -122,3 +122,57 @@ function onClickMenu(){
 function onclickCalculator(){
     location.href ='https://fluffy-dango-534713.netlify.app/';
 }
+
+//Handle scroll event on widow
+// check that skills sections sectio is visible or not
+//ensure that initial width of colored skill div is zero -> inittialsed/reset to zero width value
+//start animation on ever skill-> increase width from 0 to skill level at regular interval
+//store skill level in data attribute->HTML with the help of data attribute
+
+var progressBars = document.querySelectorAll(".skill-progress > div");
+var skillsContainer = document.getElementById("skills-container");
+window.addEventListener("scroll", checkScroll);
+var animationDone = false;
+
+function initializeBars() {
+    for(let bar of progressBars) {
+        bar.style.width = 0 + '%';
+    }
+}
+
+initializeBars();
+
+function fillBars() {
+    for(let bar of progressBars) {
+        let targetWidth = bar.getAttribute("data-bar-width");
+
+        console.log(targetWidth);
+        let currentWidth = 0;
+        let interval = setInterval(function() {
+            if(currentWidth >= targetWidth) {
+                clearInterval(interval);
+                return;
+            }
+            currentWidth++;
+            bar.style.width = currentWidth + '%';
+        }, 5);
+    }
+}
+
+
+function checkScroll(){
+    //you have to check whther skill section is visible
+    var coordinates = skillsContainer.getBoundingClientRect();
+    if( !animationDone && coordinates.top <= window.innerHeight){
+        animationDone = true;
+        console.log('skills section visible');
+
+        fillBars();
+
+    }else if(coordinates.top > window.innerHeight){
+        animationDone = false;
+        initializeBars();
+    }
+}
+
+// we have need to done for single bar coordinate bar fill 
