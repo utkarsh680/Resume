@@ -1,0 +1,562 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+#body-header {
+margin-top: -40px;
+  height: 65vh;
+  background-image: url("https://burst.shopifycdn.com/photos/in-office-working-on-laptop.jpg?width=1200&format=pjpg&exif=1&iptc=1");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(244, 241, 241);
+  padding: 10px 0px 20px 0px;
+}
+.nav-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.nav-list li a {
+  color: rgb(102, 99, 99);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.4s, border-bottom 4s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nav-list li a:hover {
+  color: rgb(253, 143, 162);
+  text-decoration: underline;
+}
+.nav-list li {
+  display: inline-block;
+  margin: 15px 8px 8px 0px;
+}
+
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+}
+.horizontal-list li {
+  display: inline-block;
+  margin: 15px 8px 8px 0px;
+}
+
+.horizontal-list li a {
+  
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.4s, border-bottom 4s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.horizontal-list li a:hover {
+  color: rgb(253, 143, 162);
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* name and social media */
+#name-social-container {
+  
+  /* margin-top: 20vh; */
+}
+.name-box{
+   position: relative;
+   top:23vh;
+}
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.horizontal-list li a img {
+  height: 30px;
+  margin-left: 10px;
+  transition: box-shadow 0.2s;
+}
+.horizontal-list li a img:hover {
+  box-shadow: 0px 0px 6px 5px rgba(243, 101, 101, 0.4);
+  border-radius: 5px;
+}
+/* section */
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section:nth-child(2n + 1) {
+  background-color: rgb(243, 243, 243);
+}
+section:nth-child(2n) {
+  background-color: rgb(233, 231, 231);
+}
+.section-heading {
+  width: auto;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.section-heading span {
+  font-size: 25px;
+  color: #2857a4;
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: 40px;
+}
+/* common margin classes */
+.mb75px {
+  margin-bottom: 75px;
+}
+/* about section */
+
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+  padding: 0% 0% 6% 0%;
+}
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -12vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 7px 5px rgba(18, 17, 17, 0.4);
+}
+#about p {
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+  padding: 5% 12% 5% 12%;
+  text-align: justify;
+  color: gray;
+}
+#about p span {
+  color: rgb(76, 132, 230);
+  font-weight: 600;
+}
+
+/* skills section */
+
+.skills-display {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0% 0% 10% 0%;
+}
+.skill-progress {
+  height: 2rem;
+  padding: 0px 0px 4px 0px;
+  width: 10rem;
+  background-color: lightgrey;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 1px 2px 6px grey inset;
+}
+
+/* skill percentage classes */
+
+.eighty-five-percent {
+  width: 85%;
+  height: inherit;
+  background-color: rgb(9, 66, 164);
+  border-radius: 20px 0px 0px 20px;
+  padding: 4px 0px 0px 0px;
+  box-shadow: 2px 0px 4px 0px rgba(9, 0, 0, 0.5);
+}
+.seventy-five-percent {
+  width: 75%;
+  height: inherit;
+  background-color: rgb(197, 96, 8);
+  border-radius: 20px 0px 0px 20px;
+  padding: 4px 0px 0px 0px;
+  box-shadow: 2px 0px 4px 0px rgba(9, 0, 0, 0.5);
+}
+.sixty-nine-percent {
+  width: 68%;
+  height: inherit;
+  background-color: rgb(90, 73, 132);
+  border-radius: 20px 0px 0px 20px;
+  padding: 4px 0px 0px 0px;
+  box-shadow: 2px 0px 4px 0px rgba(9, 0, 0, 0.5);
+}
+.sixty-percent {
+  width: 60%;
+  height: inherit;
+  background-color: rgb(14, 72, 7);
+  border-radius: 20px 0px 0px 20px;
+  padding: 4px 0px 0px 0px;
+  box-shadow: 2px 0px 4px 0px rgba(9, 0, 0, 0.5);
+}
+.sixty-five-percent {
+  width: 65%;
+  height: inherit;
+  background-color: rgb(15, 137, 174);
+  border-radius: 20px 0px 0px 20px;
+  padding: 4px 0px 0px 0px;
+  box-shadow: 2px 0px 4px 0px rgba(9, 0, 0, 0.5);
+}
+.seventy-three-percent {
+  width: 73%;
+  height: inherit;
+  background-color: rgb(202, 72, 72);
+  border-radius: 20px 0px 0px 20px;
+  padding: 4px 0px 0px 0px;
+  box-shadow: 2px 0px 4px 0px rgba(9, 0, 0, 0.5);
+}
+
+/* for skill name */
+.skill-name span {
+  color: white;
+  font-size: 1rem;
+  margin-left: 7px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* work exprerience section */
+
+/* timeline */
+.timeline {
+  position: relative;
+  width: 75%;
+}
+.timeline-box {
+  position: relative;
+  width: 40%;
+  left: 5%;
+  margin: 5px;
+  min-height: 150px;
+}
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+/* timetraveller point */
+
+.timeline-box:nth-child(2n + 1):after {
+  content: "";
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  right: -12.5%;
+  background-color: grey;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+}
+.timeline-box:nth-child(2n):after {
+  content: "";
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  left: -9%;
+  background-color: grey;
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+}
+.timeline-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.timeline-box-content .degree {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: #2857a4;
+}
+.timeline-box-content .place {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  color: rgba(235, 158, 15, 0.843);
+}
+.timeline-box-content .time {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  color: lightslategrey;
+}
+.timeline-box-content p {
+  color: grey;
+  text-align: justify;
+}
+.timeline-box > span > img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 3.5rem;
+}
+
+/* timeline divider */
+.timeline-divider {
+  position: absolute;
+  height: 75%;
+  width: 0px;
+  border: 1px dashed #0096fa6b;
+  top: 10%;
+  left: 50%;
+}
+
+/* timeline traveller */
+.timeline-traveller {
+  position: sticky;
+  top: 25%;
+  transform: rotate(90deg);
+}
+
+/* porfolio section */
+.portfolio-display {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0% 0% 4% 0%;
+}
+
+ .portfolio-display .project .box  {
+  position: relative;
+  height: 15rem;
+  width: 17rem;
+  margin: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.project img {
+  height: inherit;
+  width: inherit;
+  border-radius: 20px;
+  transition: box-shadow 0.5s;
+}
+.text {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.project .overlay:hover {
+  opacity: 1;
+}
+.project .box:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* contact section */
+.contact-container {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    background-color: #181a1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+    color: #cfd1d0;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+
+}
+
+.contact-form-container {
+    max-width: 1024px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.contact-form {
+    width: 50%;
+    height: 70%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1d2021;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgb(22, 22, 22),
+    -5px -5px 10px rgb(22, 22, 22);
+}
+
+.contact-name {
+    margin: 20px 10px;
+}
+
+.contact-name input {
+    width: 90%;
+    padding: 12px 20px;
+    background-color: #181a1b;
+    border-radius: 10px;
+    color: #cfd1d0;
+    outline: none;
+    border: 2px solid #333739;
+    font-size: 1rem;
+}
+
+.contact-email {
+    margin: 20px 10px;
+}
+
+.contact-email input {
+    width: 90%;
+    padding: 12px 20px;
+    background-color: #181a1b;
+    border-radius: 10px;
+    color: #cfd1d0;
+    outline: none;
+    border: 2px solid #333739;
+    font-size: 1rem;
+}
+
+.contact-subject {
+    margin: 20px 10px;
+}
+
+.contact-subject input {
+    width: 90%;
+    padding: 12px 20px;
+    background-color: #181a1b;
+    border-radius: 10px;
+    color: #cfd1d0;
+    outline: none;
+    border: 2px solid #333739;
+    font-size: 1rem;
+}
+
+.message {
+    margin: 20px 10px;
+}
+
+.message textarea {
+    width: 90%;
+    height: 15vh;
+    padding: 12px 20px;
+    resize: none;
+    background-color: #181a1b;
+    border-radius: 10px;
+    color: #cfd1d0;
+    outline: none;
+    border: 2px solid #333739;
+    font-size: 1rem;
+}
+
+.sendbutton {
+    margin: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 11px 35px;
+    border-radius: 25px;
+    background-color: #6d5e05;
+    color: #cfd1d0;
+    border: 2px solid #917d07;
+    transition: all 0.3s ease-in-out;
+}
+
+.sendbutton:hover {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #cfd1d0;
+    margin: 20px;
+}
+
+.contact-info p {
+    line-height: 1.5;
+}
+
+
+.contact-details-container {
+    font-size: 0.8rem;
+    display: flex;
+}
+
+.contact-detials {
+    display: inline-block;
+    margin-right: 6%;
+}
+
+.contact-detials p{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.contact-details-ans {
+    display: inline-block;
+}
+
+.contact-details-ans p{
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.contact-details-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details-icons i {
+    margin-top: 20px; 
+    margin-right: 10px;
+}
+.contact-heading {
+    width: auto;
+    font-weight: 600;
+    padding:30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
